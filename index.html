@@ -35,6 +35,36 @@
   <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'><link rel="stylesheet" href="assets/css/plantstyle.css">
   <link rel="stylesheet" href="assets/css/cardstyle.css">
 
+  <style>
+    /* Modal styles */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal video {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+</style>
 </head>
 
 <body>
@@ -76,7 +106,14 @@
           <div class="col-lg-12 text-center text-lg-start">
             <h1 data-aos="fade-right">World First Non Invasive Diabetic Risk Assessment</h1>
             <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="assets/img/JCRV.mp4" class="btn btn-outline-purple">Watch Tutorial</a>&nbsp;&nbsp;<a href="#" class="btn btn-outline-white">Get Started</a></p>          
+            <!-- <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="assets/img/JCRV.mp4" class="btn btn-outline-purple">Watch Tutorial</a>&nbsp;&nbsp;<a href="#" class="btn btn-outline-white">Get Started</a></p> -->
+            <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500">
+              
+              <a href="assets/img/JCRV.mp4" class="btn btn-outline-purple">Watch Tutorial</a>&nbsp;&nbsp;
+              <!-- <a href="#" class="btn btn-outline-white">Get Started</a></p> -->
+              <a href="#read-more" class="btn btn-outline-white">Get Started</a>
+
+
           </div>
         </div>
         <div class="col-lg-5 pt-5 pt-lg-0 order-1 order-lg-2 d-flex align-items-center"> <!-- Adjust the column width as needed -->
@@ -104,7 +141,7 @@
   
    
    <!-- Showcase -->
-   <section class="section-a">
+   <section id="read-more" class="section-a">
     <div class="container">
       <img src="assets/img/rings/bcharger.png" alt="" />
       <div>
@@ -915,6 +952,47 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script  src="./assets/js/plantscript.js"></script>
 
+<script>
+  function openVideoPopup(videoUrl) {
+      // Create a new video element
+      var video = document.createElement('video');
+      video.src = videoUrl;
+      video.controls = true;
+      video.autoplay = true;
+  
+      // Create a close button
+      var closeBtn = document.createElement('button');
+      closeBtn.classList.add('close-btn');
+      closeBtn.innerHTML = '&times;'; // Unicode for '×'
+  
+      // Create a modal to contain the video and close button
+      var modal = document.createElement('div');
+      modal.classList.add('modal');
+      modal.appendChild(video);
+      modal.appendChild(closeBtn);
+  
+      // Append the modal to the body
+      document.body.appendChild(modal);
+  
+      // Close the modal when clicking outside the video or the close button
+      modal.addEventListener('click', function(e) {
+          if (e.target === modal || e.target === closeBtn) {
+              modal.remove();
+          }
+      });
+  }
+  
+  // Listen for clicks on the "Watch Tutorial" button
+  document.addEventListener('DOMContentLoaded', function() {
+      var watchTutorialBtn = document.querySelector('p[data-aos="fade-right"] a.btn.btn-outline-purple');
+      watchTutorialBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          openVideoPopup(watchTutorialBtn.href);
+      });
+  });
+  </script>
+
 </body>
 
 </html>
+
