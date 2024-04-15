@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -183,7 +183,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   color: rgb(255, 255, 255);
   white-space: nowrap;
   transition: 0.3s;
@@ -437,11 +437,11 @@ h6 {
 
 #hero h1 {
   margin: 0 0 20px 0;
-  font-size: 48px;
-  font-family: "Jost", sans-serif;
-  font-weight: 700;
-  line-height: 56px;
-  color: rgb(255, 238, 238);
+  font-size: 68px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 650;
+  line-height: 59px;
+  color: rgb(255, 240, 240);
 }
 
 #hero h1 span {
@@ -452,33 +452,21 @@ h6 {
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
-  font-size: 24px;
-  font-family: "Jost", sans-serif;
+  font-size: 44px;
+  color: rgb(255, 240, 240);
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 56px;
+  font-family: "Poppins", sans-serif;
 
 }
 #hero p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 254, 254);
   font-size: 18px;
   font-family: "Jost", sans-serif;
 
 }
 
-#hero .btn-get-started {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #fff;
-  background: #000000;
-}
-
-#hero .btn-get-started:hover {
-  background: #354C75;
-}
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -869,7 +857,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .section-title h2::after {
@@ -899,7 +887,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .section-title1 h2::after {
@@ -922,6 +910,7 @@ section {
 
 .section-title1 h6{
   color: white;
+  
 }
 /* Add necessary styles for smaller screens */
 @media (max-width: 767px) {
@@ -1226,21 +1215,22 @@ section {
 .details .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #1acc8d;
+  color: #1de30f;
 }
 
 .details .content p:last-child {
   margin-bottom: 0;
 }
 .details .img-fluid {
-  width: 500px; /* Adjust the width as needed */
+  width: 100%; /* Adjust the width as needed */
+}
+ul.feature-list li {
+  color: rgb(83, 71, 71); /* Change 'blue' to any color you prefer */
 }
 .custom-image {
-  width: 100%; /* Adjust this value to make the image bigger */
+  width: 400%; /* Adjust this value to make the image bigger */
   height: auto;
 }
-
-
 
 /* Centered text */
 .text-center {
@@ -1508,7 +1498,7 @@ section {
   font-size: 36px;
   color: #1acc8d;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1564,7 +1554,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1648,6 +1638,7 @@ section {
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  color: #000000;
 }
 
 .faq .faq-list .icon-show {
