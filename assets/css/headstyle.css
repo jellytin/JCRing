@@ -198,6 +198,8 @@ img {
 
 .btn:hover {
   background: var(--secondary-color);
+      color: #fff;
+
 }
 
 .overlay {
