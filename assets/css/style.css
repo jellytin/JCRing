@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #1acc8d;
+  color: #0F1626;
   text-decoration: none;
 }
 
@@ -44,8 +44,8 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1acc8d;
-  border-top-color: #d2f9eb;
+  border: 6px solid #0F1626;
+  border-top-color: #354C75;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1235,6 +1235,12 @@ section {
 .details .img-fluid {
   width: 500px; /* Adjust the width as needed */
 }
+.custom-image {
+  width: 100%; /* Adjust this value to make the image bigger */
+  height: auto;
+}
+
+
 
 /* Centered text */
 .text-center {
