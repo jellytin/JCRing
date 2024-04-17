@@ -32,7 +32,7 @@ img {
   }
   
   .section-a .container {
-    display: flex;
+    display: grid;
    grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     align-items: center;
@@ -40,7 +40,7 @@ img {
   }
   
   .section-a img {
-    width: 35%; /* Adjust the width as needed */
+    width: 30%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-right: 1rem; /* Adjust the spacing between the image and text */
   }
