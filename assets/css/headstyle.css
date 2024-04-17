@@ -37,7 +37,7 @@ img {
   }
   
   .section-a img {
-    width: 60%; /* Adjust the width as needed */
+    width: 50%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-right: 1rem; /* Adjust the spacing between the image and text */
   }
