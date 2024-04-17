@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/gstyle.css">
 
 
-  <style>
+<style>
     /* Modal styles */
     .modal {
         position: fixed;
@@ -65,6 +65,132 @@
         padding: 5px 10px;
         cursor: pointer;
     }
+
+
+
+
+    ul li{
+      list-style:none;
+    }
+    .slideContent {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+        height: 500px; /* Add this line to set the height of the slide content */
+        /* background: #ccc; */
+        min-height: 415px;
+      }
+
+    .slideContent:hover a.SlideBtn{
+      opacity:1;
+    }
+    .slideList{
+ 
+        width:2000px;
+    }
+    .slideList li{
+      display:none;
+        vertical-align:middle;
+        margin: 0 10px;
+      /* perspective: 150px;
+        -webkit-perspective: 150px;
+        -moz-perspective: 150px;*/
+        transition:all .5s;
+        -webkit-transition:all .5s;
+        -moz-transition:all .5s;
+        position:relative;
+    }
+    .slideList li.center{
+      display: inline-block;
+        transform: scale(1);
+        left: 7%;
+        z-index: 1;
+        position: absolute;
+    }
+    .slideList li.left{
+        display: inline-block;
+        transform: scale(0.8);
+        left: -10%;
+        position: absolute;
+    }
+    .slideList li.right{
+        display: inline-block;
+        transform: scale(0.8);
+        left: 50%;
+        position: absolute;
+    }
+    .slideList li a{
+      display:block;
+        color:#fff;
+        width:290px;
+        min-height:408px;
+        background-color:#ccc;
+        border-radius:8px;
+        box-shadow: 1px 1px 6px rgba(0,0,0,.4);
+        position:relative;
+        overflow:hidden;
+        text-align:center;
+    }
+    .SlideBtn{
+        position:absolute;
+        width:30px;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        font-size:16px;
+        color:#fff;
+        border-radius:50%;
+        top: 44%;
+        background-color:rgba(0,0,0,0.5);
+        z-index:2;
+        transition:all .5s;
+        -webkit-transition:all .5s;
+        -moz-transition:all .5s;
+        text-decoration: none;
+    /*     opacity: 0; */
+    }
+    .SlideBtn.right{
+        right:0;
+    }
+    .SlideBtn.left{
+        left:0;
+    }
+
+    .disable-link {
+    pointer-events: none; /* Disable pointer events on the anchor tag */
+    }
+
+    @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .bounce {
+    animation: bounce 2.3s infinite;
+  }
+
+  .right-center {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+
+
+  }
+
+
 
 </style>
 </head>
@@ -290,45 +416,34 @@
 
 <!-- ======= Details Section ======= -->
 <body class="container-body">
-<section id="details" class="details">
-  <div class="container">
 
-    <div class="row content">
-      <div class="col-md-8 pt-4" data-aos="fade-up">
-        <h3>JCRING</h3>
-        <p class="fst-italic">
-         
-        </p>
-        <ul class="feature-list">
-
-          <li><i class="bi bi-check"></i> Non-invasive Diabetic Risk Evaluation & Monitoring</li>
-          <li><i class="bi bi-check"></i> No More Pain, Easy to Check Anywhere Anytime</li>
-          <li><i class="bi bi-check"></i> As Simple As a Ring</li>
-          <li><i class="bi bi-check"></i> VO<SUB>2</SUB> Max Measuring </li>
-          <li><i class="bi bi-check"></i> Automatic Health Vital Signs Monitoring Based on Patent Algorithm</li>
-          <li><i class="bi bi-check"></i> More Accurate from the Finger</li>
-          <li><i class="bi bi-check"></i> Automatic Sleep Monitor</li>
-          <li><i class="bi bi-check"></i> Women Health Tracking</li>
-          <li><i class="bi bi-check"></i> Looooooooooong... Battery Life
-            with Auto Vital Measurement</li>
-
-
-          <a href="assets/img/JCRingCatalog.pdf" target="_blank" class="btn btn-primary">View More</a>
-      </div>
-      <div class="col-md-4" data-aos="fade-right">
-        <div class="card">
-
-          <div class="wrapper">
-            <img src="assets/img/rings/charger.png" alt="" class='cover-image'>
-          </div>
-          <img src="assets/img/rings/charger.png" alt="" class="character">
+  <section id="details" class="details">
+    <div class="container">
+      <div class="row content">
+        <div class="col-md-6 pt-3" data-aos="fade-up">
+          <h3>JCRING</h3>
+          <p class="fst-italic"></p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check"></i> Non-invasive Diabetic Risk Evaluation & Monitoring</li>
+            <li><i class="bi bi-check"></i> No More Pain, Easy to Check Anywhere Anytime</li>
+            <li><i class="bi bi-check"></i> As Simple As a Ring</li>
+            <li><i class="bi bi-check"></i> VO<SUB>2</SUB> Max Measuring </li>
+            <li><i class="bi bi-check"></i> Automatic Health Vital Signs Monitoring Based on Patent Algorithm</li>
+            <li><i class="bi bi-check"></i> More Accurate from the Finger</li>
+            <li><i class="bi bi-check"></i> Automatic Sleep Monitor</li>
+            <li><i class="bi bi-check"></i> Women Health Tracking</li>
+            <!-- <li><i class="bi bi-check"></i> Looooooooooong... Battery Life with Auto Vital Measurement</li> -->
+            <a href="assets/img/JCRingCatalog.pdf" target="_blank" class="btn btn-primary">View More</a>
+          </ul>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/img/rings/bcharger.png" alt="" class='bounce right-center'>
         </div>
       </div>
     </div>
-    
-
-  </div>
-</section><!-- End Details Section -->
+  </section>
+  
+    <!-- End Details Section -->
 
     </body>
  
@@ -392,74 +507,64 @@
     
 
 
-   <!-- ======= UPDATED Details Section ======= -->
+ <!-- ======= UPDATED Details Section ======= -->
 <section id="details" class="details">
   <div class="container">
     <div class="row content align-items-center">
-       <div class="slideContent">
-      <ul class="slideList">
-         <li>
-           <a href="#">
-             <div class="slideInfo">
-              <img src="assets/img/rings/try6.png">
+      <div class="slideContent" data-aos="fade-up">
+        <ul class="slideList">
+           <li>
+             <a href="#" class="disable-link">
+               <div class="slideInfo">
+                <img src="assets/img/rings/try.png" >
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="disable-link">
+               <div class="slideInfo">
+                <img src="assets/img/rings/try3.png">
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="disable-link">
+               <div class="slideInfo">
+                  <img src="assets/img/rings/try4.png">
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="disable-link">
+               <div class="slideInfo">
+                <img src="assets/img/rings/try5.png">
+               </div>
+             </a>
+           </li> 
+          <li>
+             <a href="#" class="disable-link">
+               <div class="slideInfo">
+                <img src="assets/img/rings/try6.png">
+               </div>
+             </a>
+           </li>
+          </ul>
+       </a>
+     </div>
 
-             </div>
-           </a>
-         </li>
-         <li>
-           <a href="#">
-             <div class="slideInfo">
-              <img src="assets/img/rings/try.png">
-
-             </div>
-           </a>
-         </li>
-         <li>
-           <a href="#">
-             <div class="slideInfo">
-              <img src="assets/img/rings/try3.png">
-
-             </div>
-           </a>
-         </li> 
-        <li>
-           <a href="#">
-             <div class="slideInfo">
-               <img src="assets/img/rings/try4.png">
-             </div>
-           </a>
-         </li>
-         <li>
-          <a href="#">
-            <div class="slideInfo">
-              <img src="assets/img/rings/try5.png">
-            </div>
-          </a>
-        </li>
-<!--          <li>
-           <a href="#">
-             <div class="slideInfo">
-               6
-             </div>
-           </a>
-         </li> -->
-      </ul>
-      <a href="#" class="SlideBtn left">
-        <
-     </a>
-     <a href="#" class="SlideBtn right">
-          >
-     </a>
-   </div>
       <div class="col-md-6 " data-aos="fade-up">
         <h3 class="text-center">Download JCRing App<br> to Explore More</h3>
-        <p class="text-center"><a href="https://apps.apple.com/ph/app/jc-ring/id6449987678" class="btn d-inline-flex align-items-center"><i class="bx bxl-apple"></i><span>App store</span></a> <a href="https://play.google.com/store/apps/details?id=com.jstyles.jcring&pcampaignid=web_share" class="btn d-inline-flex align-items-center"><i class="bx bxl-play-store"></i><span>Google play</span></a></p>
+        <p class="text-center">
+        <a target = "_blank" href="https://apps.apple.com/ph/app/jc-ring/id6449987678" class="btn d-inline-flex align-items-center"><i class="bx bxl-apple"></i> <span>App store</span></a> 
+        <a target = "_blank" href="https://play.google.com/store/apps/details?id=com.jstyles.jcring&pcampaignid=web_share" class="btn d-inline-flex align-items-center"><i class="bx bxl-play-store"></i> <span>Google play</span></a>
+       </p>
       </div>
       
     </div>
   </div>
 </section>
 <!-- End Details Section -->
+     
      
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq section-bg">
