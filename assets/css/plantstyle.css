@@ -540,16 +540,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Pontano Sans", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  color: #888;
-  background: #fff;
-  text-rendering: optimizeLegibility;
-}
+
 
 ul {
   padding: 0;
@@ -606,6 +597,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 
 nav {
   display: block;
@@ -697,7 +689,7 @@ nav li {
   color: #fff;
   border: none;
   border-radius: 0;
-  padding: 1.25rem 2.5rem;
+  padding: 1rem 2rem; /* Adjust the padding as needed */
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -707,6 +699,7 @@ nav li {
 }
 .add-to-cart:hover::before {
   transform: scaleX(1);
+
 }
 .add-to-cart::before {
   position: absolute;
@@ -716,13 +709,14 @@ nav li {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 10px;
   background: #565657;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.3s ease-out;
 }
 
-.container {
+.custom-container {
   margin: auto;
   padding: 0 1rem;
   max-width: 75rem;
@@ -835,4 +829,111 @@ footer {
   to {
     opacity: 1;
   }
+}
+/* Style for color options */
+.color-option {
+  background-color: transparent;
+  border: 2px solid #7b7878;
+  border-radius: 10px;
+  color: #333;
+  padding: 8px 16px;
+  margin-top: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.color-option:hover {
+  background-color: transparent;
+  color: #574b4b;
+  border-color: #000000;
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if the buttons exceed the container width */
+  width: 460px; /* Adjust the width as needed */
+}
+/* Style for size options */
+.size-option {
+  background-color: transparent;
+  border: 2px solid #7b7878;
+  border-radius: 10px;
+  color: #333;
+  padding: 8px 16px;
+  margin-left: 8px;
+  margin-right: 5px; /* Adjust the right margin as needed */
+  margin-bottom: 5px; /* Adjust the bottom margin as needed */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  width: calc(33.33% - 5px); /* Adjust width and margin as needed */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+
+}
+.size-option:hover {
+  background-color: transparent;
+  color: #000000;
+  border-color: #ccc;
+}
+
+/* Style for the quantity input */
+#quantity {
+  width: 50px; /* Adjust the width as needed */
+  padding: 8px; /* Adjust the padding as needed */
+  border-radius: 10px;
+  border: 2px solid #7b7878;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Show the default number input arrows */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  opacity: 1;
+}
+
+
+/* Style for color buttons */
+.color-options {
+  display: flex;
+  align-items: center;
+}
+
+.color-option {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.silver {
+  background-color: silver;
+  color: black;
+}
+
+.rosegold {
+  background-color: #B76E79; /* Change to the desired color code for rose gold */
+  color: white;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden; /* Hide any part of the image that exceeds the container */
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures the image behaves like a block element */
 }
