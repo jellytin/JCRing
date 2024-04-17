@@ -33,7 +33,10 @@ img {
   
   .section-a .container {
     display: flex;
+   grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
     align-items: center;
+    justify-content: center;
   }
   
   .section-a img {
