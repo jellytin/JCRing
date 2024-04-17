@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <!-- You can link your CSS file here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Checkout</h1>
+
+  <div id="order-details">
+    <h2>Order Details</h2>
+    <p><strong>Product:</strong> <span id="product-title"></span></p>
+    <p><strong>Price:</strong> <span id="product-price"></span></p>
+    <p><strong>Color:</strong> <span id="selected-color"></span></p>
+    <p><strong>Size:</strong> <span id="selected-size"></span></p>
+    <p><strong>Quantity:</strong> <span id="selected-quantity"></span></p>
+  </div>
+
+  <h2>Personal Information</h2>
+  <!-- Add form fields to collect personal information -->
+  <form id="checkout-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <!-- Add more fields as needed (e.g., address, phone number) -->
+    
+    <button type="submit">Place Order</button>
+  </form>
+
+  <script>
+    // Retrieve order details from URL parameters
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const title = urlParams.get('title');
+    const price = urlParams.get('price');
+    const color = urlParams.get('color');
+    const size = urlParams.get('size');
+    const quantity = urlParams.get('quantity');
+
+    // Update HTML elements with order details
+    document.getElementById('product-title').textContent = title;
+    document.getElementById('product-price').textContent = price;
+    document.getElementById('selected-color').textContent = color;
+    document.getElementById('selected-size').textContent = size;
+    document.getElementById('selected-quantity').textContent = quantity;
+
+    // Add event listener for form submission
+    document.getElementById('checkout-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission behavior
+      
+      // Collect personal information from form
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      // Add more fields as needed
+
+      // Perform further processing (e.g., send data to server, display confirmation message)
+      // This is just a basic example
+      alert('Thank you, ' + name + '! Your order has been placed.');
+    });
+  </script>
+</body>
+</html>
