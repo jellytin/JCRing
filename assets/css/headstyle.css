@@ -25,8 +25,6 @@ img {
   padding: 0 2rem;
 }
 
-
-
 .section-a {
     margin: 1rem 0;
   }
@@ -34,34 +32,27 @@ img {
   .section-a .container {
     display: grid;
    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     align-items: center;
     justify-content: center;
+    
   }
   
   .section-a img {
     width: 60%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 1rem; /* Adjust the spacing between the image and text */
+    margin-right: 100px; /* Adjust the margin in pixels */
   }
   
   .section-a h1 {
-    font-size: 4rem;
-    color: var(--primary-color);
-      margin: 0.5rem 0; /* Adjust the margin as needed */
-  }
-  
-  .section-a p {
-    margin: 1rem 0;
-  }
-  
-  .section-a h1 {
-    font-size: 4rem;
+    font-size: 3.1rem;
     color: var(--primary-color);
   }
   
   .section-a p {
     margin: 1rem 0;
+    text-align: justify;
+
   }
   section-b {
   position: relative;
