@@ -28,27 +28,38 @@ img {
 
 
 .section-a {
-  margin: 2rem 0;
-}
-
-.section-a .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-a h1 {
-  font-size: 4rem;
-  color: var(--primary-color);
-}
-
-.section-a p {
-  margin: 1rem 0;
-}
-
-.section-b {
+    margin: 1rem 0;
+  }
+  
+  .section-a .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-a img {
+    width: 60%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Adjust the spacing between the image and text */
+  }
+  
+  .section-a h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+  }
+  
+  .section-a p {
+    margin: 1rem 0;
+  }
+  
+  .section-a h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+  }
+  
+  .section-a p {
+    margin: 1rem 0;
+  }
+  ction-b {
   position: relative;
   background: url('/Bootslander/assets/img/ring4.png') no-repeat bottom center/cover;
   height: 1000px;
