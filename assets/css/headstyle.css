@@ -48,6 +48,7 @@ img {
   .section-a h1 {
     font-size: 4rem;
     color: var(--primary-color);
+      margin: 0.5rem 0; /* Adjust the margin as needed */
   }
   
   .section-a p {
