@@ -186,9 +186,39 @@
   left: 1%;
   transform: translate(-50%, -50%);
   height: 300px;
-
-
   }
+  
+/* CSS for the automatic typing effect */
+  .text-typing {
+    overflow: hidden; /* Hide overflowing text */
+    border-right: .15em solid orange; /* Simulate cursor */
+    white-space: nowrap; /* Keep text in a single line */
+    margin: 0; /* Remove default margin */
+    animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+  }
+
+  /* Define keyframes for typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Define keyframes for cursor blinking */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent; /* Blinking effect */
+    }
+    50% {
+      border-color: #0F1626 ; /* Blinking effect */
+    }
+  }
+
+
 
 
 
