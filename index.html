@@ -788,7 +788,7 @@
    
     
 <!------- buy now section ---->
-	  <div class="custom-container">
+<div class="custom-container">
   <div class="grid second-nav">
     <div class="column-xs-12">
       <nav>
@@ -816,22 +816,24 @@
       <h1 id="product-title">JCRING</h1>
       <h5>The Most Accurate Smart Health Ring 2301B</h5>
       <h2 id="product-price">$199</h2>
-      <div class="options">
+       <div class="options">
+        <label for="color">Color:</label>
         <div class="color-options">
-          <label for="color">Color:</label>
           <button class="color-option black" onclick="changeTitleAndImage('JCRING BLACK', '$199', 'black', 'assets/img/rings/2.png')">Black</button>
           <button class="color-option silver" onclick="changeTitleAndImage('JCRING SILVER', '$199', 'silver', 'assets/img/rings/1.png')">Silver</button>
           <button class="color-option rosegold" onclick="changeTitleAndImage('JCRING ROSE GOLD', '$199', 'rose gold', 'assets/img/rings/3.png')">Rose Gold</button>
         </div>
-        <div class="size-options">
+         <div class="size-options">
           <label for="size">Size:</label>
-          <button class="size-option" onclick="changeSize('12')">12 (21.55mm)</button>
-          <button class="size-option" onclick="changeSize('11')">11 (20.7mm)</button>
-          <button class="size-option" onclick="changeSize('10')">10 (19.9mm)</button>
-          <button class="size-option" onclick="changeSize('9')">9 (19mm)</button>
-          <button class="size-option" onclick="changeSize('8')">8 (18.2mm)</button>
-          <button class="size-option" onclick="changeSize('7')">7 (17.4mm)</button>  
-      </div>
+          <div>
+            <button class="size-option" onclick="changeSize('12')">12 (21.55mm)</button>
+            <button class="size-option" onclick="changeSize('11')">11 (20.7mm)</button>
+            <button class="size-option" onclick="changeSize('10')">10 (19.9mm)</button>
+            <button class="size-option" onclick="changeSize('9')">9 (19mm)</button>
+            <button class="size-option" onclick="changeSize('8')">8 (18.2mm)</button>
+            <button class="size-option" onclick="changeSize('7')">7 (17.4mm)</button>  
+          </div>
+        </div>
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" value="1" min="1">
       </div>
