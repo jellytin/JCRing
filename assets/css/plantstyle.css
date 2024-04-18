@@ -832,12 +832,14 @@ footer {
 }
 /* Style for color options */
 .color-option {
+  
   background-color: transparent;
-  border: 2px solid #7b7878;
-  border-radius: 10px;
+  border: 2px solid transparent;
+  border-radius: 0;
   color: #333;
-  padding: 8px 16px;
-  margin-top: 10px;
+  font-size: 15px;
+  padding: 4px 8px; /* Adjust the padding as needed */
+  margin-top: 4px;
   margin-right: 4px;
   margin-left: 4px;
   margin-bottom: 20px;
@@ -848,35 +850,48 @@ footer {
 .color-option:hover {
   background-color: transparent;
   color: #574b4b;
-  border-color: #000000;
+  border-color: #45f300;
 }
 
+/* Style for size options */
 .size-options {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping if the buttons exceed the container width */
   width: 460px; /* Adjust the width as needed */
 }
-/* Style for size options */
+
 .size-option {
   background-color: transparent;
   border: 2px solid #7b7878;
-  border-radius: 10px;
+  border-radius: 0;
   color: #333;
-  padding: 8px 16px;
-  margin-left: 8px;
-  margin-right: 5px; /* Adjust the right margin as needed */
-  margin-bottom: 5px; /* Adjust the bottom margin as needed */
+  padding: 4px 8px; /* Adjust the padding as needed */
+  font-size: 15px; /* Adjust the font size as needed */
+  margin-left: 4px; /* Adjust the left margin as needed */
+  margin-right: 4px; /* Adjust the right margin as needed */
+  margin-bottom: 6px; /* Adjust the bottom margin as needed */
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   width: calc(33.33% - 5px); /* Adjust width and margin as needed */
   box-sizing: border-box; /* Include padding and border in width calculation */
-
 }
+
 .size-option:hover {
   background-color: transparent;
   color: #000000;
-  border-color: #ccc;
+  border-color: #45f300;
 }
+/* Style for the size buttons */
+.size-option {
+  /* Your existing styles */
+}
+
+/* Highlight selected size button */
+.size-option.active {
+  background-color: #4CAF50; /* Change to your desired color */
+  color: white;
+}
+
 
 /* Style for the quantity input */
 #quantity {
@@ -887,6 +902,7 @@ footer {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* Show the default number input arrows */
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
@@ -898,34 +914,29 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
-
 /* Style for color buttons */
 .color-options {
   display: flex;
   align-items: center;
 }
 
-.color-option {
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-.black {
+/* Specific styles for each color button */
+.color-option.black {
   background-color: black;
   color: white;
 }
 
-.silver {
+.color-option.silver {
   background-color: silver;
   color: black;
 }
 
-.rosegold {
+.color-option.rosegold {
   background-color: #B76E79; /* Change to the desired color code for rose gold */
   color: white;
 }
 
+/* Product image styling */
 .product-image {
   max-width: 100%;
   max-height: 100%;
