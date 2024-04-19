@@ -1677,7 +1677,7 @@ ul.feature-list li {
 
 .contact .info i {
   font-size: 20px;
-  color: #3f43fd;
+  color: #0F1626;
   float: left;
   width: 44px;
   height: 44px;
@@ -1694,14 +1694,14 @@ ul.feature-list li {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #010483;
+  color: #000000;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #0205a1;
+  color: #000000;
 }
 
 .contact .info .email,
@@ -1712,7 +1712,7 @@ ul.feature-list li {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1acc8d;
+  background: #0F1626;
   color: #fff;
 }
 
@@ -1741,7 +1741,7 @@ ul.feature-list li {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #0F1626;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1761,7 +1761,7 @@ ul.feature-list li {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #0F1626;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1782,7 +1782,7 @@ ul.feature-list li {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1acc8d;
+  background: #0F1626;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1791,7 +1791,7 @@ ul.feature-list li {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #34e5a6;
+  background: #2b3b61;
 }
 
 @keyframes animate-loading {
@@ -1803,6 +1803,7 @@ ul.feature-list li {
     transform: rotate(360deg);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Footer
