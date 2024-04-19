@@ -242,7 +242,7 @@
           <li class="hide-on-small"><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li class="hide-on-small"><a class="nav-link scrollto" href="#about">About</a></li>
           <li class="hide-on-small"><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li class="hide-on-small"><a class="nav-link scrollto" href="#order-now">Cart</a></li>
+          <li class="hide-on-small"><a class="nav-link scrollto" href="#order-now">Order Now</a></li>
             <ul>
           <li class="hide-on-small"><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -714,60 +714,64 @@
       </div>
     </section><!-- End F.A.Q Section -->
  
+   
+    
 <!------- buy now section ---->
-<div class="custom-container">
-  <div class="grid second-nav">
-    <div class="column-xs-12">
-      <nav>
-        <ol class="breadcrumb-list">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active">JCRINGS</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-  <div class="grid product">
-    <div class="column-xs-12 column-md-7">
-      <div class="product-gallery">
-        <div class="product-image">
-          <img id="product-img" class="active" src="assets/img/rings/jcfashion (2).png">
-        </div>
-        <ul class="image-list">
-          <li class="image-item"><img src="assets/img/rings/2.png" onclick="changeTitleAndImage('JCRING BLACK', '$199', 'black', 'assets/img/rings/2.png')"></li>
-          <li class="image-item"><img src="assets/img/rings/1.png" onclick="changeTitleAndImage('JCRING SILVER', '$199', 'silver', 'assets/img/rings/1.png')"></li>
-          <li class="image-item"><img src="assets/img/rings/3.png" onclick="changeTitleAndImage('JCRING ROSE GOLD', '$199', 'rose gold', 'assets/img/rings/3.png')"></li>
-        </ul>
+<section id="order-now">
+  <div class="custom-container">
+    <div class="grid second-nav">
+      <div class="column-xs-12">
+        <nav>
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">JCRINGS</li>
+          </ol>
+        </nav>
       </div>
     </div>
-    <div class="column-xs-12 column-md-5">
-      <h1 id="product-title">JCRING</h1>
-      <h5>The Most Accurate Smart Health Ring 2301B</h5>
-      <h2 id="product-price">$199</h2>
-       <div class="options">
-        <label for="color">Color:</label>
-        <div class="color-options">
-          <button class="color-option black" onclick="changeTitleAndImage('JCRING BLACK', '$199', 'black', 'assets/img/rings/2.png')">Black</button>
-          <button class="color-option silver" onclick="changeTitleAndImage('JCRING SILVER', '$199', 'silver', 'assets/img/rings/1.png')">Silver</button>
-          <button class="color-option rosegold" onclick="changeTitleAndImage('JCRING ROSE GOLD', '$199', 'rose gold', 'assets/img/rings/3.png')">Rose Gold</button>
-        </div>
-         <div class="size-options">
-          <label for="size">Size:</label>
-          <div>
-            <button class="size-option" onclick="changeSize('12')">12 (21.55mm)</button>
-            <button class="size-option" onclick="changeSize('11')">11 (20.7mm)</button>
-            <button class="size-option" onclick="changeSize('10')">10 (19.9mm)</button>
-            <button class="size-option" onclick="changeSize('9')">9 (19mm)</button>
-            <button class="size-option" onclick="changeSize('8')">8 (18.2mm)</button>
-            <button class="size-option" onclick="changeSize('7')">7 (17.4mm)</button>  
+    <div class="grid product">
+      <div class="column-xs-12 column-md-7">
+        <div class="product-gallery">
+          <div class="product-image">
+            <img id="product-img" class="active" src="assets/img/rings/jcfashion (2).png">
           </div>
+          <ul class="image-list">
+            <li class="image-item"><img src="assets/img/rings/2.png" onclick="changeTitleAndImage('JCRING BLACK', '$199', 'black', 'assets/img/rings/2.png')"></li>
+            <li class="image-item"><img src="assets/img/rings/1.png" onclick="changeTitleAndImage('JCRING SILVER', '$199', 'silver', 'assets/img/rings/1.png')"></li>
+            <li class="image-item"><img src="assets/img/rings/3.png" onclick="changeTitleAndImage('JCRING ROSE GOLD', '$199', 'rose gold', 'assets/img/rings/3.png')"></li>
+          </ul>
         </div>
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" value="1" min="1">
       </div>
-      <button class="add-to-cart" onclick="addToCart()">Order Now</button>
+      <div class="column-xs-12 column-md-5">
+        <h1 id="product-title">JCRING</h1>
+        <h5>The Most Accurate Smart Health Ring 2301B</h5>
+        <h2 id="product-price">$199</h2>
+         <div class="options">
+          <label for="color">Color:</label>
+          <div class="color-options">
+            <button class="color-option black" onclick="changeTitleAndImage('JCRING BLACK', '$199', 'black', 'assets/img/rings/2.png')">Black</button>
+            <button class="color-option silver" onclick="changeTitleAndImage('JCRING SILVER', '$199', 'silver', 'assets/img/rings/1.png')">Silver</button>
+            <button class="color-option rosegold" onclick="changeTitleAndImage('JCRING ROSE GOLD', '$199', 'rose gold', 'assets/img/rings/3.png')">Rose Gold</button>
+          </div>
+           <div class="size-options">
+            <label for="size">Size:</label>
+            <div>
+              <button class="size-option" onclick="changeSize('12')">12 (21.55mm)</button>
+              <button class="size-option" onclick="changeSize('11')">11 (20.7mm)</button>
+              <button class="size-option" onclick="changeSize('10')">10 (19.9mm)</button>
+              <button class="size-option" onclick="changeSize('9')">9 (19mm)</button>
+              <button class="size-option" onclick="changeSize('8')">8 (18.2mm)</button>
+              <button class="size-option" onclick="changeSize('7')">7 (17.4mm)</button>  
+            </div>
+          </div>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" value="1" min="1">
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Order Now</button>
+      </div>
     </div>
   </div>
-</div>
+</section>
 <script>
   function changeTitleAndImage(title, price, color, imageUrl) {
     document.getElementById('product-title').textContent = title;
